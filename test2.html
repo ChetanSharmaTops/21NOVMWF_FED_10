@@ -1,82 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            background-color: aquamarine;
-
-        }
-        thead{
-            background-color: tomato;
-            color: rgb(199, 231, 17);
-        }
-        tbody{
-            background-color: rgb(209, 12, 248);
-            color: aliceblue;
-        }
-        td {
-            text-align: center;
-            text-transform: uppercase;
-        }
-        a{
-            text-decoration: none;
-            color: aliceblue;
-
-
-        }
-        li{
-            padding: 10px;
-        }
-        iframe{
-            background-color: #fff;
-        }
-    </style> -->
     
+<!-- This is how HTML comments look like -->
+<!-- the title will appear on the page-->
+<title>Employee Interests Survey</title>
 </head>
 
 <body>
-    <table Width="100%" border="">
-        <thead>
-        <tr>
-            <td width="20%"><a href="test.html"><img src="Images/banner1.jpg" alt="LOGO" width="100px"></a></td>
-            <td width="50%"> HTML Practical Example</td>
-            <td width="10%">Home</td>
-            <td width="10%"><a href="../../chetan/WD Material/Jai SIr TAsk/Restaurant website/HTML/index.html" target="myframe">Project</a></td>
-            <td width="10%">Contact</td>
-            
-        </tr>
-    </thead>
-    <tbody>
-        <tr width="100%">
-            <td width="20%">
-                <ul>
-                   <li><a href="../13sepTTSWD-1/HTML/06htmlLayout.html" target="myframe">Test</a></li>
-                   <li><a href="../13sepTTSWD-1/HTML/12Imagemap/01Imagemap.html" target="myframe">Test</a></li>
-                   <li><a href="../13sepTTSWD-1/HTML/12Imagemap/01Imagemap.html" target="myframe">Test</a></li>
-                   <li><a href="../13sepTTSWD-1/HTML/12Imagemap/01Imagemap.html" target="myframe">Test</a></li>
-                   <li><a href="../13sepTTSWD-1/HTML/12Imagemap/01Imagemap.html" target="myframe">Test</a></li>
-                   <li><a href="../13sepTTSWD-1/HTML/12Imagemap/01Imagemap.html" target="myframe">Test</a></li>
-                   <li><a href="../13sepTTSWD-1/HTML/12Imagemap/01Imagemap.html" target="myframe">Test</a></li>
-                   <li><a href="../13sepTTSWD-1/HTML/12Imagemap/01Imagemap.html" target="myframe">Test</a></li>
-                   <li><a href="../13sepTTSWD-1/HTML/12Imagemap/01Imagemap.html" target="myframe">Test</a></li>
-                   <li><a href="../13sepTTSWD-1/HTML/12Imagemap/01Imagemap.html" target="myframe">Test</a></li>
-                </ul>
-            </td>
-            <td colspan="4" width="80%"><iframe src="" height="540px" width="100%" name="myframe" frameborder="0"></iframe>
-            </td>
-        </tr>
-    </tbody>
-    </table>
+<!-- as it is a survey form, we will need to submit the details, hence we use form -->
+<!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
+<form action="http://google.co.in">
+<!-- If we remove this, every thing will move to the left of the page-->
+<div align="center">
+<!--Adds a heading to the form-->
+<h1>Employee Interests Survey form</h1>
+Enter your name:
+<!-- Input type text for small texts, specify size -->
+<input type="text" name="UserName" size=35 maxlength=35 value="">
+<!--Adds spaces - remove and see what happens -->
+</br></br>
+Enter your department:
+<input type="text" name="Deptt" size=35 maxlength=35 value=""> </br> </br>
+Tell us a little about yourself:
+<!-- For writing lot of text like descriptions with text wrapping,
+if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
+<textarea name="Comments" cols=30 rows=4></textarea> </br> </br>
+Do you exercise at home?
+<!-- Radio buttons help you choose one out of the many values -->
+<input type="radio" name="exe" value=1>Yes
+<input type="radio" name="exe" value=2>No
+</p>
+How do you like to read about your favorite topics?
+<p>
+<!--Checkbox lets you select multiple options -->
+<input type="checkbox" name="Books">Books
+<input type="checkbox" name="Web">Online resources
+<input type="checkbox" name="Phone">Phone apps
+<input type="checkbox" name="Magazines">Magazines
+</p>
+What genre of movies do you like?
+<!--Select box lets you choose one of the multiple dropdown options-->
+<select name="moviepref" ><option>
+<option value=1 selected = "true">comedy
+<option value=2 >romance
+<option value=3 >thriller
+<option value=4 >horror
+<option value=5 >biopic
+</select>
+</br></br>
+<!--submits the information entered in the form by the user -->
+<input type=submit value="Submit form">
+</div>
+</form>
+
 </body>
 
 </html>
