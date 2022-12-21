@@ -1,0 +1,15 @@
+ /* Selectors{
+            propety1: value1;
+            propety2: value2;
+
+        } */
+
+.external{
+    background-color: teal;
+    color: khaki;
+}
+
+p{
+    background-color: teal;
+    color: khaki;
+} 
