@@ -5,8 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Descendent Selectors  */
+        /* .Dadaji p{
+            color: blue;
+        } */
+
+        /* child Selectors  */
+        .Dadaji>p{
+            color: rgb(255, 115, 0);
+        }
+    </style>
 </head>
 <body>
-    <img src="Images/html.png"  width="100px" alt="">
+    <div class="Dadaji">
+        <p class="child-siblings">Lorem ipsum dolor sit amet.</p>
+        <p class="child-siblings">Lorem ipsum dolor sit amet.</p>
+        <p class="child-siblings">Lorem ipsum dolor sit amet.</p>
+        <div class="child-siblings">
+        <p class="child-child-siblings">Lorem ipsum dolor sit amet.</p>
+        <p class="child-child-siblings">Lorem ipsum dolor sit amet.</p>
+        <p class="child-child-siblings">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <p class="child-siblings">Lorem ipsum dolor sit amet.</p>
+        <div class="child-siblings">
+            <div class="child-child-siblings">
+        <p class="child-child-siblings">Lorem ipsum dolor sit amet.</p>
+        <p class="child-child-siblings">Lorem ipsum dolor sit amet.</p>
+        <p class="child-child-siblings">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <p class="child-siblings">Lorem ipsum dolor sit amet.</p>
+        <p class="child-siblings">Lorem ipsum dolor sit amet.</p>
+        <p class="child-siblings">Lorem ipsum dolor sit amet.</p>
+
+    </div>
 </body>
 </html>

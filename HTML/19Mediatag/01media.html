@@ -9,7 +9,7 @@
 <body>
     <audio src="../../media/halloween_movie.mp3">Audio</audio>
     <audio controls src="../../media/halloween_movie.mp3">Audio</audio>
-    <audio controls muted src="../../media/halloween_movie.mp3">Audio</audio>
+    <audio controls autoplay muted src="../../media/halloween_movie.mp3">Audio</audio>
     <hr>
     <video src="../../media/Pasoori.mp4" width="300"></video>
     <video controls src="../../media/Pasoori.mp4" width="300"></video>
@@ -18,5 +18,11 @@
     <video controls muted autoplay loop src="../../media/Pasoori.mp4" width="300"></video>
     <hr>
     <embed src="../../media/html_tutorial.pdf" width="500px" height="500px" type="">
+        <hr>
+
+        <audio id="player" autoplay controls>
+        <source src="../../media/halloween_movie.mp3" type="audio/mp3">
+        <source src="../../media/halloween_movie.mp3" type="audio/org">
+    </audio>
 </body>
 </html>
