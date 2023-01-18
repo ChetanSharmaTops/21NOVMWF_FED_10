@@ -5,8 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            border: 1px solid black;
+            color: aliceblue;
+
+        }
+        .fixed{
+            position: fixed;
+            top: 0;
+            right: 0;
+            color: aliceblue;
+            background-color: black;
+        }
+        div[class*= "box"]{
+            height: 500px;
+        }
+        .sticky{
+            position: sticky;
+            top: 0;
+            left: 0;
+            color: aliceblue;
+            background-color: crimson;
+        }
+        .box-1{
+background-color: teal;
+        }
+        .box-2{
+            background-color: rgb(128, 51, 0);
+        }
+        .box-3{
+            background-color: rgb(0, 128, 43);
+        }
+        .box-4{
+            background-color: rgb(0, 9, 128);
+        }
+        .box-5{
+          background-color: rgb(233, 130, 139);  
+          position: relative;
+        }
+         .box-6{
+          background-color: rgb(128, 0, 96);  
+        }
+        div[class*="box-ab"]{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+        }
+        .box-ab-1{
+            background-color: orange;
+            top: 50px;
+            left: 50px;
+            z-index: 10;
+        }
+        .box-ab-2{
+            background-color: rgb(0, 17, 255);
+            top: 80px;
+            left: 80px;
+            z-index: 5;
+
+        }
+        .box-ab-3{
+            background-color: rgb(255, 0, 149);
+            top: 110px;
+            left: 110px;
+            z-index: 10;
+
+        }
+        .box-ab-4{
+            background-color: rgb(238, 255, 0);
+            color: black;
+            top: 140px;
+            left: 140px;
+            z-index: 0;
+
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="fixed">Fixed Position</div>
+    <div class="box-1">box-1</div>
+    <div class="box-2">box-2</div>
+    <div class="box-3">box-3
+        <div class="sticky">Sticky Position</div>
+    </div>
+    <div class="box-4">box-4</div>
+    <div class="box-5">box-5
+        <div class="box-ab-1">box-ab-1</div>
+        <div class="box-ab-2">box-ab-2</div>
+        <div class="box-ab-3">box-ab-3</div>
+        <div class="box-ab-4">box-ab-4</div>
+    </div>
+    <div class="box-6">box-6</div>
 </body>
 </html>
